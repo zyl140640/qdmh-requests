@@ -1,0 +1,29 @@
+- body:
+    location_no: 1
+  case_name: 查询横幅广告（Banner）成功
+  url: /layout/banner
+  feature: 页面布局 #模块名称
+  story: 横幅广告（Banner） #功能名称
+  severity: normal #用例等级
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            path:
+              type: string
+            ads_id:
+              type: integer
+            title:
+              type: string
+            target:
+              type: string

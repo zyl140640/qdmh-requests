@@ -1,0 +1,148 @@
+#新添地址接口 版本：single_data_v1.0 用例编号test_address_add
+- body: #请求体
+    province_name: 上海市
+    email: s.mong@qq.com
+    phone: '13665338004'
+    consignee: mollit et proident aliquip
+    address: 上海市静安区
+    street_no: aaa
+    default_flag: 1
+    city_code: aaa
+    province_code: aaa
+    region_no: aaa
+    short_name: 上海市静安区
+    region_name: 上海市静安区
+    city_name: 上海市静安区
+  severity: normal #用例等级
+  story: 添加地址 #用例功能
+  feature: 地址模块 #用例模块
+  url: /address/add #接口请求地址
+  case_name: 新添地址请求成功 #用例名称
+  schema:
+      type: object
+      required: [ ]
+      properties:
+          msg:
+              type: string
+          code:
+              type: integer
+          data:
+              type: object
+              required: [ ]
+              properties:
+                  address_id:
+                      type: integer
+                  short_name:
+                      type: string
+                  member_id:
+                      type: number
+                  region_no:
+                      type: string
+                  street_no:
+                      type: string
+                  address:
+                      type: string
+                  consignee:
+                      type: string
+                  phone:
+                      type: string
+                  mobile:
+                      default: string
+                  email:
+                      type: string
+                  type:
+                      type: integer
+                  default_flag:
+                      type: number
+                  last_flag:
+                      type: integer
+                  status:
+                      type: integer
+                  province:
+                      type: string
+                  city:
+                      type: string
+                  area:
+                      type: string
+                  province_code:
+                      type: string
+                  city_code:
+                      type: string
+                  area_code:
+                      type: string
+                  street_name:
+                      type: string
+#用例2
+- body: #请求体
+    province_name: 北京市
+    email: s.mong@qq.com
+    phone: '13665338004'
+    consignee: mollit et proident aliquip
+    address: 上海市静安区
+    street_no: aaa
+    default_flag: 1
+    city_code: aaa
+    province_code: aaa
+    region_no: aaa
+    short_name: 上海市静安区
+    region_name: 上海市静安区
+    city_name: 上海市静安区
+  severity: normal #用例等级
+  story: 添加地址 #用例功能
+  feature: 地址模块 #用例模块
+  url: /address/add #接口请求地址
+  case_name: test_address_add_新添地址北京 #用例名称
+  schema:
+      type: object
+      required: [ ]
+      properties:
+          msg:
+              type: string
+          code:
+              type: integer
+          data:
+              type: object
+              required: [ ]
+              properties:
+                  address_id:
+                      type: integer
+                  short_name:
+                      type: string
+                  member_id:
+                      type: number
+                  region_no:
+                      type: string
+                  street_no:
+                      type: string
+                  address:
+                      type: string
+                  consignee:
+                      type: string
+                  phone:
+                      type: string
+                  mobile:
+                      default: string
+                  email:
+                      type: string
+                  type:
+                      type: integer
+                  default_flag:
+                      type: number
+                  last_flag:
+                      type: integer
+                  status:
+                      type: integer
+                  province:
+                      type: string
+                  city:
+                      type: string
+                  area:
+                      type: string
+                  province_code:
+                      type: string
+                  city_code:
+                      type: string
+                  area_code:
+                      type: string
+                  street_name:
+                      type: string

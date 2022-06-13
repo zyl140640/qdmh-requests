@@ -1,0 +1,21 @@
+address_id: 718
+baseURL: http://192.168.31.166:8888
+token: 8801d68a1343c71c89c03b1a228870df
+gettoken: 6095
+case_data_path: /data/single_data_v1.0/
+get_sign_url: /test/get/sign
+headers:
+  Authorization: MTIzOnJvb3Q=
+  Content-Type: application/json
+  User-Agent: PostmanRuntime/7.28.4
+device_register_url: /device/register
+device_sign_url: /device/sign
+User-Agent:
+  channel: appStore
+  deviceModel: iPhone
+  deviceToken: 12312-232
+  platform: iOS
+  sysVersion: 14.7.1
+  appName: mimu
+  appVersion: '1.2'
+  network: 4G

@@ -1,0 +1,32 @@
+- body:
+    page_no: 1
+  case_name:  查询金刚区（按钮功能区）成功
+  url: /layout/shortcut
+  feature: 页面布局 #模块名称
+  story: 金刚区（按钮功能区） #功能名称
+  severity: normal #用例等级
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            target:
+              type: string
+            shortcut_id:
+              type: number
+            name:
+              type: string
+            logo:
+              type: string
+            shortcut_no:
+              type: string
+

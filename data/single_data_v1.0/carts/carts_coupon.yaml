@@ -1,0 +1,18 @@
+
+- body:
+    shop_id: 13
+  severity: normal #用例等级
+  feature: 购物车模块 #用例模块
+  story: 购物车优惠券 #用例功能
+  case_name: 购物车中根据店铺获取优惠券列表
+  url: /carts/coupon
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

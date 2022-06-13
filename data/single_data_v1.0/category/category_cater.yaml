@@ -1,0 +1,52 @@
+- body:
+    type: cater
+    parent_no: '4'
+  severity: normal #用例等级
+  feature: 分类模块 #用例模块
+  story: 分类管理 #用例功能
+  case_name: 餐饮商品分类
+  url: /category/cater
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      code:
+        type: integer
+      msg:
+        type: string
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            menu_id:
+              type: number
+            name:
+              type: string
+            icon:
+              type: string
+            target_no:
+              type: string
+            parent_id:
+              type: number
+            level:
+              type: number
+            orderby:
+              type: number
+            status:
+              type: number
+            remark:
+              type: string
+            type:
+              type: string
+            children:
+              type: array
+              items:
+                type: string
+            selected:
+              type: boolean
+      error:
+        type: string
+      ok:
+        type: boolean

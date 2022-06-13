@@ -1,0 +1,17 @@
+- body:
+    order_no: '11165346513212310'
+  case_name: 删除订单请求通过
+  url: /orders/remove
+  feature: 订单
+  story: 删除订单
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

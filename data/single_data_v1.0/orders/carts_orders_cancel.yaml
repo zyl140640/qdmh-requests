@@ -1,0 +1,8 @@
+- body:
+    order_no: '11165346513212310'
+  case_name: 取消订单请求通过
+  url: /carts/orders/cancel
+  feature: 订单
+  story: 取消订单
+  severity: normal
+  schema:

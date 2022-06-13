@@ -1,0 +1,19 @@
+- body:
+    supplier_type: 3
+    page: 1
+    size: 2
+  case_name: 搜索框-瀑布流
+  url: /search/page
+  feature: 搜索
+  story: 搜索框-瀑布流
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

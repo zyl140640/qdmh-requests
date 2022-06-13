@@ -1,0 +1,77 @@
+- body:
+    'no': '00'
+  severity: normal #用例等级
+  feature: 分类模块 #用例模块
+  story: 主分类管理 #用例功能
+  case_name: 商品主分类子项
+  url: /category/items
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      code:
+        type: integer
+      msg:
+        type: string
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            menu_id:
+              type: number
+            name:
+              type: string
+            icon:
+              type: string
+            target_no:
+              type: string
+            category_no:
+              type: array
+              items:
+                type: string
+            children:
+              type: array
+              items:
+                type: object
+                required: [ ]
+                properties:
+                  menu_id:
+                    type: number
+                  name:
+                    type: string
+                  icon:
+                    type: string
+                  target_no:
+                    type: string
+                  category_no:
+                    type: array
+                    items:
+                      type: string
+                  children:
+                    type: array
+                    items:
+                      type: object
+                      required: [ ]
+                      properties:
+                        menu_id:
+                          type: number
+                        name:
+                          type: string
+                        icon:
+                          type: string
+                        target_no:
+                          type: string
+                        category_no:
+                          type: array
+                          items:
+                            type: string
+                        children:
+                          type: array
+                          items:
+                            type: string
+      error:
+        type: string
+      ok:
+        type: boolean

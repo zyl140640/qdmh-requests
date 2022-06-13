@@ -1,0 +1,27 @@
+#商品相关推荐 版本：single_data_v1.0 用例编号test_goods_recommend
+- body:
+    m_id: 1486889702467305500
+    sku_id: 5
+    size: 3
+    type: 1
+  case_name: test_goods_recommend_商品相关推荐成功
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品相关推荐管理 #用例功能
+  url: /goods/recommend
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      code:
+        type: integer
+      msg:
+        type: string
+      data:
+        type: array
+        items:
+          type: string
+      error:
+        type: string
+      ok:
+        type: boolean

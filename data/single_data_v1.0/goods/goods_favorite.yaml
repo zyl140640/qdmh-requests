@@ -1,0 +1,28 @@
+#商品收藏接口 版本：single_data_v1.0 用例编号test_goods_favorite
+- body:
+    ids:
+      - 20
+      - 30
+  case_name: test_goods_favorite_商品收藏成功
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品收藏管理 #用例功能
+  url: /goods/favorite
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            sku_id:
+              type: number
+            favorite:
+              type: boolean

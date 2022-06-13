@@ -1,0 +1,24 @@
+- body:
+    address_id: 201
+    order_token: 1134
+    coupon_no: 1
+    serial_no: 1
+    create_order_items_dtos:
+    - sku_id: 10
+      qty: 10
+      promo_no: 6
+  severity: normal
+  feature: 购物车模块
+  story: 购物车下单
+  case_name: 购物车下单成功
+  url: /carts/orders
+  schema:
+    type: object
+    required: []
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

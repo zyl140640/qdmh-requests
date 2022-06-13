@@ -1,0 +1,17 @@
+- body:
+    coupon_no: 8
+  case_name: 店铺领券请求通过
+  url: /shop/getCoupon
+  feature: 店铺
+  story: 店铺领券
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

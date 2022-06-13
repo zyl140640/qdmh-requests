@@ -1,0 +1,17 @@
+- body:
+    aftersales_id: 17
+  case_name: 售后单详情返回成功
+  url: /service
+  feature: 售后
+  story: 售后申请
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

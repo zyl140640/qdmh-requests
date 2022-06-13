@@ -1,0 +1,20 @@
+#活动 版本：single_data_v1.0 用例编号test_store_detail
+- body:
+    activity_no: 10
+  case_name: 活动详情接口请求成功
+  feature: &feature 活动
+  story: &story 活动详情
+  severity: normal
+  url: &url /store/detail
+  schema:
+    type: object
+    required: [msg,code,data ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        pattern: ^0
+      data:
+        type: object

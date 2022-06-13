@@ -1,0 +1,41 @@
+#会员卡商品信息 版本：single_data_v1.0 用例编号test_member_vipCardInfo
+- body:
+  case_name: 会员卡商品信息请求通过
+  url: /member/vipCardInfo
+  feature: 会员
+  story: 会员卡商品信息
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 0
+      data:
+        type: object
+        required: [ ]
+        properties:
+          sku_id:
+            type: number
+          shop_id:
+            type: number
+          art_no:
+            type: string
+          name:
+            type: string
+          title:
+            type: string
+          shop_price:
+            type: string
+          logo:
+            type: string
+            pattern: ^https://picsum.photos/400/400+[/?]+(?=random=)
+          shop_logo:
+            type: string
+            pattern: ^https://picsum.photos/400/400+[/?]+(?=random=)
+          shop_name:
+            type: string

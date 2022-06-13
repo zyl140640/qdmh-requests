@@ -1,0 +1,27 @@
+#商品二维码接口 版本：single_data_v1.0 用例编号test_goods_qrcode
+- body:
+    sku_id: 1
+    mall: laborum officia cillum
+    channel: '1'
+    source: '1'
+  case_name: test_goods_qrcode_商品二维码请求成功
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品二维码管理 #用例功能
+  url: /goods/qrcode
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: object
+        required: [ ]
+        properties:
+          sku_id:
+            type: number
+          image:
+            type: string

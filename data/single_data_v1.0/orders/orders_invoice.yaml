@@ -1,0 +1,19 @@
+- body:
+    address_id: 205
+    order_no: '11165346513213407'
+    invoice_id: 21
+  case_name: 申请发票 新
+  url: /orders/invoice
+  feature: 订单
+  story: 申请发票 新
+  severity: normal
+  schema:
+    type: object
+    required: [ code ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

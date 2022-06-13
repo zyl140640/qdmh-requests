@@ -1,0 +1,93 @@
+- body:
+    page_no: 4
+  case_name: 依据页面来查询具体布局成功
+  url: /layouts/page
+  feature: 页面布局 #模块名称
+  story: 依据页面来查询具体布局 #功能名称
+  severity: normal #用例等级
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            page_no:
+              type: string
+            type:
+              type: string
+            name:
+              type: string
+            item_vos:
+              type: array
+              items:
+                type: object
+                required: [ ]
+                properties:
+                  item_id:
+                    type: number
+                  path:
+                    type: string
+                  target:
+                    type: string
+                  banners_media:
+                    type: array
+                    items:
+                      type: object
+                      required: [ ]
+                      properties:
+                        path:
+                          type: string
+                        target:
+                          type: string
+                  title:
+                    type: string
+                  location_no:
+                    type: string
+                  tags:
+                    type: string
+                  location:
+                    type: string
+                  sku_id:
+                    type: integer
+                  sku_name:
+                    type: string
+                  shop_id:
+                    type: integer
+                  shop_name:
+                    type: string
+                  shop_logo:
+                    type: string
+                  shop_price:
+                    type: string
+                  vip_price:
+                    type: string
+                  shop_path:
+                    type: string
+                  sku_for15:
+                    type: array
+                    items:
+                      type: string
+                  sys_time:
+                    type: integer
+                  act_end_time:
+                    type: integer
+                  discount_percent:
+                    type: string
+            shop_logo:
+              type: string
+            shop_id:
+              type: string
+            shop_name:
+              type: string
+            shop_path:
+              type: string
+            recommend_id:
+              type: integer

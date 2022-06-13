@@ -1,0 +1,24 @@
+#活动 版本：single_data_v1.0 用例编号test_store_reserve
+- body:
+    activity_no: 10
+    storeItems_dtos:
+      name: 流没低
+      phone: 18142837438
+    reserve_count: 54
+  case_name: 预约活动接口请求成功
+  feature: &feature 活动
+  story: &story 预约活动
+  severity: normal
+  url: &url /store/reserve
+  schema:
+    type: object
+    required: [msg,code,data ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        pattern: ^0
+      data:
+        type: object

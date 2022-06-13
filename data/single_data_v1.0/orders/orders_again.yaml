@@ -1,0 +1,17 @@
+- body:
+    order_no: '11165346513213407'
+  case_name: 再次购买请求通过
+  url: /orders/again
+  feature: 订单
+  story: 再次购买
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

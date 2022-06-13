@@ -1,0 +1,86 @@
+- body:
+  case_name: 页面布局（列出所有位置）
+  url: /layouts/location/pages
+  feature: 页面布局 #模块名称
+  story: 页面布局 #功能名称
+  severity: normal #用例等级
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            page_no:
+              type: string
+            type:
+              type: string
+            name:
+              type: string
+            item_vos:
+              type: array
+              items:
+                type: object
+                required: [ ]
+                properties:
+                  item_id:
+                    type: number
+                  path:
+                    type: string
+                  target:
+                    type: string
+                  banners_media:
+                    type: array
+                    items:
+                      type: string
+                  title:
+                    type: string
+                  location_no:
+                    type: string
+                  tags:
+                    type: string
+                  location:
+                    type: string
+                  sku_id:
+                    type: integer
+                  sku_name:
+                    type: string
+                  shop_id:
+                    type: integer
+                  shop_name:
+                    type: string
+                  shop_logo:
+                    type: string
+                  shop_price:
+                    type: string
+                  vip_price:
+                    type: string
+                  shop_path:
+                    type: string
+                  sku_for15:
+                    type: array
+                    items:
+                      type: string
+#                  sys_time:
+#                    type: string
+#                  act_end_time:
+#                    type: string
+                  discount_percent:
+                    type: string
+            shop_logo:
+              type: string
+#            shop_id:
+#              type: string
+            shop_name:
+              type: string
+            shop_path:
+              type: string
+            recommend_id:
+              type: integer

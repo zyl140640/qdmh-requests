@@ -1,0 +1,29 @@
+- body:
+    order_no: '11165190694423765'
+    type: 1
+    m_id: 1480428544436732000
+    reason: nulla
+    way: '123'
+    descr: onlyrefund
+    goods_status: 1
+    items: [ ]
+    responsible: shop
+    sku_itemss:
+      - sku_id: 11
+        amount: 49
+        qty: 10
+  case_name: 申请售后
+  url: /service/apply
+  feature: 售后
+  story: 售后申请
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

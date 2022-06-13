@@ -1,0 +1,19 @@
+
+- body:
+    sku_ids:
+      - '1'
+  severity: normal #用例等级
+  feature: 购物车模块 #用例模块
+  story: 购物车删除 #用例功能
+  case_name: 删除购物车成功
+  url: /carts/remove
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

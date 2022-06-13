@@ -1,0 +1,21 @@
+- body:
+    page: 1
+    size: 2
+    guid: '83'
+    m_id: '1486889702467305472'
+    supplier_type: '1'
+  case_name: 搜索-猜你喜欢
+  url: /search/liked
+  feature: 搜索
+  story: 搜索框-猜你喜欢
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

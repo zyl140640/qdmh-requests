@@ -1,0 +1,120 @@
+#商品评论接口 版本：single_data_v1.0 用例编号test_goods_comments
+- body:
+    page: 1
+    size: 10
+    sku_id: 2189
+  case_name: test_goods_comments_商品评论
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品评论管理 #用例功能
+  url: /goods/comments
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: object
+        required: [ ]
+        properties:
+          records:
+            type: array
+            items:
+              type: object
+              required: [ ]
+              properties:
+                comment_id:
+                  type: number
+                spu_id:
+                  type: number
+                sku_id:
+                  type: number
+                order_no:
+                  type: string
+                sku_name:
+                  type: string
+                sku_spec:
+                  type: string
+                sku_spec_name:
+                  type: string
+                tag:
+                  type: string
+                grade:
+                  type: number
+                grade_package:
+                  type: number
+                grade_deliveriy:
+                  type: number
+                grade_service:
+                  type: number
+                member_id:
+                  type: number
+                member_name:
+                  type: string
+                member_avatar:
+                  type: string
+                ip:
+                  type: string
+                content:
+                  type: string
+                create_time:
+                  type: string
+                status:
+                  type: integer
+                type:
+                  type: number
+                audit_time:
+                  type: string
+                auditor:
+                  type: string
+                add_to_comments_day:
+                  type: integer
+                few_days:
+                  type: string
+                specs:
+                  type: array
+                  items:
+                    type: object
+                    required: [ ]
+                    properties:
+                      specs_id:
+                        type: number
+                      spu_id:
+                        type: number
+                      sku_id:
+                        type: number
+                      name:
+                        type: string
+                      value:
+                        type: string
+                comments_pic_entities:
+                  type: array
+                  items:
+                    type: object
+                comments_replay_entities:
+                  type: array
+                  items:
+                    type: string
+                member_add_to_good_comments_vo:
+                  type: object
+                  required: [ ]
+                  properties: { }
+          total:
+            type: number
+          size:
+            type: number
+          current:
+            type: number
+          orders:
+            type: array
+            items:
+              type: string
+          hit_count:
+            type: boolean
+          search_count:
+            type: boolean
+          pages:
+            type: number

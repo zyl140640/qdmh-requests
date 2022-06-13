@@ -1,0 +1,24 @@
+- body:
+    shop_id: 10
+  case_name: 店铺二维码请求通过
+  url: /shop/qrcode
+  feature: 店铺
+  story: 店铺二维码
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: object
+        required: [ ]
+        properties:
+          shop_name:
+            type: string
+          logo:
+            type: string
+

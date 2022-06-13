@@ -1,0 +1,18 @@
+- body:
+    keyword: yyds
+    size: 2
+  case_name: 搜索框-输入响应数据
+  url: /search/enter
+  feature: 搜索
+  story: 搜索框-输入响应数据
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

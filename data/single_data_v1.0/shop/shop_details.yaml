@@ -1,0 +1,219 @@
+- body:
+    shop_id: 13
+  case_name: 查看店铺详情成功
+  url: /shop
+  feature: 店铺
+  story: 店铺详情
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: object
+        required: [ ]
+        properties:
+          shop_id:
+            type: number
+          supplier_id:
+            type: number
+          name:
+            type: string
+          logo:
+            type: string
+          banner:
+            type: string
+          type:
+            type: number
+          scop:
+            type: string
+          tag:
+            type: string
+          settled_date:
+            type: string
+          mobile:
+            type: string
+          status:
+            type: number
+          website:
+            type: string
+          visit:
+            type: number
+          grade:
+            type: number
+          grade_package:
+            type: number
+          grade_delivery:
+            type: number
+          grade_service:
+            type: number
+          create_time:
+            type: string
+          update_time:
+            type: string
+          domain:
+            type: string
+          freight_mode:
+            type: number
+          freight_cal:
+            type: number
+          introduction:
+            type: string
+          overseas:
+            type: string
+          goods_flag:
+            type: string
+          oreder_flag:
+            type: string
+          is_favorite:
+            type: string
+          ec_shop_style_volist:
+            type: array
+            items:
+              type: string
+          banners:
+            type: array
+            items:
+              type: string
+          model_list:
+            type: array
+            items:
+              type: string
+          license_vos:
+            type: array
+            items:
+              type: string
+          length:
+            type: string
+          bg_path:
+            type: string
+          ec_shop_style_entity:
+            type: object
+            required: [ ]
+            properties:
+              style_id:
+                type: string
+              shop_id:
+                type: string
+              banner:
+                type: string
+              banner_bg_color:
+                type: string
+              nav_bg_color:
+                type: string
+              nav_fore_color:
+                type: string
+              nav_border_color:
+                type: string
+              cat_bg_color:
+                type: string
+              cat_fore_color:
+                type: string
+              cat_line_color:
+                type: string
+              type:
+                type: string
+              is_furnish:
+                type: string
+          coupon_entities:
+            type: array
+            items:
+              type: object
+              required: [ ]
+              properties:
+                coupon_id:
+                  type: number
+                coupon_no:
+                  type: string
+                type:
+                  type: number
+                scope:
+                  type: number
+                shop_id:
+                  type: number
+                title:
+                  type: string
+                full:
+                  type: number
+                face_value:
+                  type: number
+                status:
+                  type: number
+                range_way:
+                  type: number
+                remark:
+                  type: string
+                get_begin_time:
+                  type: string
+                get_end_time:
+                  type: string
+                use_type:
+                  type: number
+                use_days:
+                  type: string
+                begin_date:
+                  type: string
+                end_date:
+                  type: string
+                payer:
+                  type: number
+                distribution:
+                  type: number
+                limit:
+                  type: string
+                coin:
+                  type: string
+                circulation:
+                  type: number
+                surplus:
+                  type: number
+                creater:
+                  type: string
+                create_time:
+                  type: string
+                updater:
+                  type: string
+                update_time:
+                  type: string
+                auditor:
+                  type: string
+                audit_time:
+                  type: string
+          shop_url:
+            type: string
+          show_sku:
+            type: array
+            items:
+              type: object
+              required: [ ]
+              properties:
+                sku_id:
+                  type: number
+                name:
+                  type: string
+                logo:
+                  type: string
+                index:
+                  type: string
+
+- body:
+    shop_id: 13
+  case_name: 查看店铺详情失败
+  url: /shop
+  feature: 店铺
+  story: 店铺详情
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

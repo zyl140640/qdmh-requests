@@ -1,0 +1,17 @@
+- body:
+    invoice_id: 46
+  case_name: 发票详情请求成功
+  severity: normal #用例等级
+  feature: 发票 #用例模块
+  story: 发票详情管理 #用例功能
+  url: /invoice
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

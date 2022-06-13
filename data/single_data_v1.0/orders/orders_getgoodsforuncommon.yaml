@@ -1,0 +1,17 @@
+- body:
+    order_no: '11165346513213407'
+  case_name: 查询当前订单中未评价的购物项列表请求通过
+  url: /orders/getGoodsForUnCommon
+  feature: 订单
+  story: 查询当前订单中未评价的购物项列表
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

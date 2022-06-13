@@ -1,0 +1,58 @@
+#商场 版本：single_data_v1.0 用例编号test_mall_list
+- body:
+  case_name: 商场列表接口请求成功
+  feature: &feature 商场
+  story: &story 商场列表
+  severity: normal
+  url: &url /mall/list
+  schema:
+    type: object
+    required: [msg,code,data ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: object
+          required: [ ]
+          properties:
+            mall_id:
+              type: number
+            mall_no:
+              type: string
+            name:
+              type: string
+            longitude:
+              type: number
+            latitude:
+              type: number
+            region_no:
+              type: string
+            address:
+              type: string
+            opening_hours:
+              type: string
+            director:
+              type: string
+            status:
+              type: number
+            create_time:
+              type: string
+              format: date
+            create_ip:
+              type: string
+            company_no:
+              type: string
+            remark:
+              type: string
+            eatery_vos:
+              type: array
+              items:
+                type: string
+            supermarket_vos:
+              type: array
+              items:
+                type: string

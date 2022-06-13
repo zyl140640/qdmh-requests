@@ -1,0 +1,22 @@
+#商品最近7天接口 版本：single_data_v1.0 用例编号test_goods_days
+- body:
+    date: '2022-04-11'
+    page: 1
+    size: 2
+  case_name: test_goods_days_商品最近7天
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品最近7天管理 #用例功能
+  url: /goods/days
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: array
+        items:
+          type: string

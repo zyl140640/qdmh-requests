@@ -1,0 +1,18 @@
+#商品降价通知接口 版本：single_data_v1.0 用例编号test_goods_addDepreciate
+- body:
+    sku_id: 2
+    expect_price: '22'
+    is_vip_price: 49
+  case_name: test_goods_addDepreciate_商品降价通知
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品降价管理 #用例功能
+  url: /goods/addDepreciate
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer

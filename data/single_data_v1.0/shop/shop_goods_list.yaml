@@ -1,0 +1,17 @@
+- body:
+    shop_id: 13
+  case_name: 店铺商品列表请求成功
+  feature: 店铺
+  story: 店铺二商品列表
+  severity: normal
+  url: /shop/favorite
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

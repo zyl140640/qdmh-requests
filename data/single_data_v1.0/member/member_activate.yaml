@@ -1,0 +1,59 @@
+#会员卡激活 版本：single_data_v1.0 用例编号test_member_activate
+- body:
+    serial_no: 4
+    real_name: 易亲第行听该
+    card_id: MIMU100
+  case_name: 会员卡激活请求通过
+  feature: 会员
+  story: 会员卡激活
+  severity: normal
+  url: /member/activate
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1
+      data:
+        type: object
+        required: [ ]
+        properties:
+          member_id:
+            type: number
+          open_id:
+            type: string
+          type:
+            type: number
+          status:
+            type: number
+          especial:
+            type: integer
+          risk:
+            type: integer
+          level:
+            type: number
+          referrer:
+            type: integer
+          visit:
+            type: integer
+          avatar:
+            type: string
+            pattern: ^https://img.memevip.com.*.jpg$
+          nickname:
+            type: string
+          sex:
+            type: number
+          birth_day:
+            type: string
+          signature:
+            type: string
+          create_time:
+            type: string
+          update_time:
+            type: string
+          email:
+            type: string

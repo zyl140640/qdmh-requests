@@ -1,0 +1,84 @@
+#会员中心信息接口 版本：single_data_v1.0 用例编号test_member_center
+- body:
+  case_name: test_member_center_会员中心信息
+  feature: 会员
+  story: 会员中心信息
+  severity: normal
+  url: /member/center
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1
+      data:
+        type: object
+        required: [ ]
+        properties:
+          member_id:
+            type: integer
+            minLength: 20
+            maxLength: 20
+          avatar:
+            type: string
+            pattern: ^https://img.memevip.com.*.jpg$
+          nickname:
+            type: string
+          bar_code:
+            type: string
+          level:
+            type: number
+          real_name:
+            type: string
+          time_limit:
+            type: integer
+          vip_begin_date:
+            type: string
+          vip_end_date:
+            type: string
+          is_vip_status:
+            type: boolean
+          is_vip:
+            type: integer
+          savings:
+            type: string
+          member_center_recommend_goods_vo:
+            type: array
+            items:
+              type: object
+              required: [ ]
+              properties:
+                title:
+                  type: string
+                sku_list:
+                  type: array
+                  items:
+                    type: object
+                    required: [ ]
+                    properties:
+                      items_id:
+                        type: number
+                      recommend_id:
+                        type: number
+                      sku_id:
+                        type: number
+                      sku_name:
+                        type: string
+                      sku_picture:
+                        type: string
+                      sku_price:
+                        type: number
+                      sku_vip_price:
+                        type: number
+                      status:
+                        type: number
+                      letter:
+                        type: string
+                      remark:
+                        type: string
+          random:
+            type: string

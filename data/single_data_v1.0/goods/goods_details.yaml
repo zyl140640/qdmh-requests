@@ -1,0 +1,134 @@
+#商品详情接口 版本：single_data_v1.0 用例编号test_goods_details
+- body:
+    sku_id: 100
+  case_name: test_goods_details_商品详情请求成功
+  severity: normal #用例等级
+  feature: 商品模块 #用例模块
+  story: 商品详情管理 #用例功能
+  url: /goods
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+      code:
+        type: integer
+      data:
+        type: object
+        required: [ ]
+        properties:
+          sku_id:
+            type: integer
+          spu_id:
+            type: integer
+          shop_id:
+            type: integer
+          barcode:
+            type: string
+          art_no:
+            type: string
+          name:
+            type: string
+          title:
+            type: string
+          brand_no:
+            type: string
+          category_no:
+            type: string
+          market_price:
+            type: integer
+          shop_price:
+            type: integer
+          floor_price:
+            type: integer
+          vip_price:
+            type: integer
+          create_time:
+            type: string
+          update_time:
+            type: string
+          logo:
+            type: string
+          status:
+            type: integer
+          status_sale:
+            type: integer
+          weight:
+            type: integer
+          cubic:
+            type: string
+          spec:
+            type: string
+          unit:
+            type: string
+          grade:
+            type: integer
+          origin:
+            type: string
+          remark:
+            type: string
+          expires:
+            type: string
+          refund:
+            type: string
+          sales:
+            type: integer
+          comment_num:
+            type: integer
+          score:
+            type: integer
+          hot:
+            type: integer
+          recommend:
+            type: integer
+          tag:
+            type: string
+          packages:
+            type: string
+          channel:
+            type: integer
+          type:
+            type: integer
+          albums:
+            type: array
+            items:
+              type: string
+          params:
+            type: array
+            items:
+              type: string
+          comment_list:
+            type: array
+            items:
+              type: string
+          shop_name:
+            type: string
+          shop_logo:
+            type: string
+          supplier_type:
+            type: integer
+          tags:
+            type: array
+            items:
+              type: string
+          coupon_nums:
+            type: integer
+          spu_number:
+            type: integer
+          spec_list:
+            type: array
+            items:
+              type: string
+          specs:
+            type: array
+            items:
+              type: string
+          info:
+            type: string
+          info_pictures:
+            type: array
+            items:
+              type: string
+          is_favorite:
+            type: boolean

@@ -1,0 +1,19 @@
+- body:
+    guid: '82'
+    m_id: 1486889702467305500
+    size: 2
+  case_name: 搜索热点列表
+  url: /search/hot
+  feature: 搜索
+  story: 搜索框热点列表
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1

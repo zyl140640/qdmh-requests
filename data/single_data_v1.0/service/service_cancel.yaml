@@ -1,0 +1,17 @@
+- body:
+    aftersales_id: 17
+  case_name: 取消售后单返回成功
+  url: /service/cancel
+  feature: 售后
+  story: 取消售后
+  severity: normal
+  schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1
