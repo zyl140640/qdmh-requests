@@ -3,7 +3,7 @@
   case_name: 售后单详情返回成功
   url: /service
   feature: 售后
-  story: 售后申请
+  story: 售后申请详情
   severity: normal
   schema:
     type: object
