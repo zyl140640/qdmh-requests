@@ -6,3 +6,12 @@
   story: 取消订单
   severity: normal
   schema:
+    type: object
+    required: [ ]
+    properties:
+      msg:
+        type: string
+        pattern: ^success
+      code:
+        type: integer
+        maximum: 1
