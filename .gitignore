@@ -1,4 +1,5 @@
 /venv/
-/reports/
-/temps/
 /.pytest_cache/
+/logs/
+/temps/
+/reports/
