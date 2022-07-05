@@ -1,6 +1,6 @@
 - body:
     address_id: 201
-    order_token: 210
+    order_token: 23895
     coupon_no: 1
     serial_no: 1
     create_order_items_dtos:
@@ -22,4 +22,3 @@
       code:
         type: integer
         maximum: 1
-
