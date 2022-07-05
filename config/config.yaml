@@ -1,6 +1,6 @@
 address_id: 718
 baseURL: http://192.168.31.166:8888
-token: ea4b843b591f992eb07b8d31aa30f763
+token: 39174cf90040233c03cfb35451c11844
 gettoken: 6095
 case_data_path: /data/single_data_v1.0/
 get_sign_url: /test/get/sign

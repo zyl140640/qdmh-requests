@@ -1,9 +1,7 @@
 import json
 import os
 import random
-
 import yaml
-
 from common.request_util import RequestHandler
 from common.yaml_util import read_yaml_key, get_object_data_path
 
