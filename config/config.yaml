@@ -1,6 +1,6 @@
 address_id: 718
-baseURL: http://192.168.31.166:8888
-token: 9244fbe00ee345855e4922830bce3a16
+baseURL: "http://jxair.minhopeonline.com//prod-api/"
+token: "eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImZjODMxODQ4LTQwYzgtNDY5ZS1hYjdjLTkxMmVlYWI4MWIxMCJ9.Oybh7Gdtvki0rop9O5xnBzUZvhEeqMLODLBXxqcpMEcdIMIjkgEoAPaw_8puQLDsHG_1keL1KQwhorB7F06ccQ"
 gettoken: 6095
 case_data_path: /data/single_data_v1.0/
 get_sign_url: /test/get/sign

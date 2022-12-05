@@ -1,24 +1,9 @@
 - body:
     shop_id: 10
-  case_name: 店铺二维码请求通过
-  url: /shop/qrcode
-  feature: 店铺
-  story: 店铺二维码
-  severity: normal
-  schema:
-    type: object
-    required: [ ]
-    properties:
-      msg:
-        type: string
-      code:
-        type: integer
-      data:
-        type: object
-        required: [ ]
-        properties:
-          shop_name:
-            type: string
-          logo:
-            type: string
+  severity: normal #用例等级
+  story: 多站多参 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/list?pageNum=1&pageSize=30&stationIds%5B0%5D=18&params%5BbeginMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-05%2011%3A07%3A18&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour"
+  case_name: 多站多参接口请求成功 #用例名称
 

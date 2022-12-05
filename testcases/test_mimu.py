@@ -7,7 +7,7 @@ from common.public_function import *
 from common.yaml_util import read_yaml
 
 
-@allure.epic("迷姆消费端-接口")
+@allure.epic("空气质量监测接口-接口")
 class TestMain:
     def setup_class(self):
         self.req = RequestHandler()
@@ -29,17 +29,15 @@ class TestMain:
             allure.dynamic.story(args['story'])
 
         url = get_url(args['url'])
-        payload = args['body']
+        payload = {}
         token = read_yaml('config/config.yaml')['token']
-        headers = request_header(payload, token)
-        response = self.req.visit("POST", url, headers=headers, json=payload)
+        headers = request_header(token)
+        response = self.req.visit("GET", url, headers=headers, json=payload)
         response_json = response.text
         self.logger.info(
-            '模块名称: {},测试目的: {} ,响应状态码: {},响应结果: {}'.format(args['story'], args['case_name'], response.status_code,
-                                                           response_json))
-        assert response.status_code == 200, "响应状态码校验失败，响应状态码是: {}".format(response.status_code)
-        assert response.json()['code'] == 0, "业务状态码校验失败，业务状态码是: {},响应结果是: {}".format(response.json()['code'],
-                                                                                     response_json)
+            '模块名称: {},测试目的: {} ,响应状态码: {},响应结果: {}'.format(args['story'], args['case_name'],
+                                                                            response.status_code,
+                                                                            response_json))
         return response_json
 
     def teardown_class(self):

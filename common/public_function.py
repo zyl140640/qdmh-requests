@@ -33,22 +33,19 @@ def get_headers(request_body):
 
 
 # 封装请求头，payload是请求体
-def request_header(payload, token):
+def request_header(token):
     """
-    :param payload: 请求接口的Body
     :param token: 用户的令牌(Token)
     :return: 返回请求接口Body的完整信息
     """
     # 调用该方法时，传入请求体和token参数即可
-    eqid = str(random.randint(100000, 2000000))
-    body = get_headers(payload)
     headers = {
-        'Authorization': 'MTIzOnJvb3Q=',
-        'eqId': eqid,
-        'Timestamp': json.dumps(body['data']['time_stamp_sys']),
-        'Sign': body['data']['sign'],
-        'Content-Type': 'application/json',
-        'Access-Token': token
+        'Authorization': token,
+        'Cookie': 'username=admin;rememberMe=true;password=FDxvYC79CN6tTEnpS6s937t3cYpos2VFM5BKQ8g+DgzD5tuvbN5xxeF08AnPWma6LrXxcnW67hH6MOKrZ0+Zug==;Admin-Token=eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6ImZjODMxODQ4LTQwYzgtNDY5ZS1hYjdjLTkxMmVlYWI4MWIxMCJ9.Oybh7Gdtvki0rop9O5xnBzUZvhEeqMLODLBXxqcpMEcdIMIjkgEoAPaw_8puQLDsHG_1keL1KQwhorB7F06ccQ;sidebarStatus=0',
+        'User-Agent': 'Apifox/1.0.0 (https://www.apifox.cn)',
+        'Accept': '*/*',
+        'Host': 'jxair.minhopeonline.com',
+        'Connection': 'keep-alive'
     }
     return headers
 
