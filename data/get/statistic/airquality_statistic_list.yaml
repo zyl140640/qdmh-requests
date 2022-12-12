@@ -1,0 +1,20 @@
+- severity: normal #用例等级
+  story: 统计报表 #用例功能
+  feature: 统计报表 #用例模块
+  #接口请求地址
+  url: "airquality/statistic/list?pageNum=1&pageSize=10&stationIds%5B0%5D=18&stationIds%5B1%5D=19&stationIds%5B2%5D=20&stationIds%5B3%5D=21&stationIds%5B4%5D=22&stationIds%5B5%5D=23&stationIds%5B6%5D=24&stationIds%5B7%5D=25&stationIds%5B8%5D=26&stationIds%5B9%5D=27&stationIds%5B10%5D=28&stationIds%5B11%5D=29&stationIds%5B12%5D=30&stationIds%5B13%5D=31&stationIds%5B14%5D=32&stationIds%5B15%5D=33&stationIds%5B16%5D=34&stationIds%5B17%5D=35&stationIds%5B18%5D=36&stationIds%5B19%5D=37&stationIds%5B20%5D=38&stationIds%5B21%5D=39&stationIds%5B22%5D=40&stationIds%5B23%5D=41&stationIds%5B24%5D=42&stationIds%5B25%5D=43&stationIds%5B26%5D=44&stationIds%5B27%5D=45&monitorTime=2022-12-06%2000%3A00%3A00&paramTypeList%5B0%5D=pm10&paramTypeList%5B1%5D=pm25&tbhbTypeList%5B0%5D=tb&tbhbTypeList%5B1%5D=hb&params%5BdataType%5D=day&params%5BdateFormat%5D=yyyy-MM-dd&params%5BtableName%5D=data_dayhis2&params%5BaqiTableName%5D=data_aqi_day"
+  case_name: 统计所有站点的日PM2.5、PM10 #用例名称
+
+- severity: normal #用例等级
+  story: 统计报表  #用例功能
+  feature: 统计报表 #用例模块
+  #接口请求地址
+  url: "airquality/statistic/list?pageNum=1&pageSize=10&stationIds%5B0%5D=18&stationIds%5B1%5D=19&stationIds%5B2%5D=20&stationIds%5B3%5D=21&stationIds%5B4%5D=22&stationIds%5B5%5D=23&stationIds%5B6%5D=24&stationIds%5B7%5D=25&stationIds%5B8%5D=26&stationIds%5B9%5D=27&stationIds%5B10%5D=28&stationIds%5B11%5D=29&stationIds%5B12%5D=30&stationIds%5B13%5D=31&stationIds%5B14%5D=32&stationIds%5B15%5D=33&stationIds%5B16%5D=34&stationIds%5B17%5D=35&stationIds%5B18%5D=36&stationIds%5B19%5D=37&stationIds%5B20%5D=38&stationIds%5B21%5D=39&stationIds%5B22%5D=40&stationIds%5B23%5D=41&stationIds%5B24%5D=42&stationIds%5B25%5D=43&stationIds%5B26%5D=44&stationIds%5B27%5D=45&monitorTime=2022-12-07%2007%3A00%3A00&paramTypeList%5B0%5D=pm10&paramTypeList%5B1%5D=pm25&tbhbTypeList%5B0%5D=tb&tbhbTypeList%5B1%5D=hb&params%5BdataType%5D=hour&params%5BdateFormat%5D=yyyy-MM-dd%20HH&params%5BtableName%5D=data_hourhis2&params%5BaqiTableName%5D=data_aqi_hour"
+  case_name: 统计所有站点的小时PM2.5、PM10 #用例名称
+
+- severity: normal #用例等级
+  story: 统计报表 #用例功能
+  feature: 统计报表 #用例模块
+  #接口请求地址
+  url: "airquality/statistic/list?pageNum=1&pageSize=10&stationIds%5B0%5D=18&monitorTime=2022-12-07%2007%3A00%3A00&paramTypeList%5B0%5D=pm10&tbhbTypeList%5B0%5D=tb&tbhbTypeList%5B1%5D=hb&params%5BdataType%5D=hour&params%5BdateFormat%5D=yyyy-MM-dd%20HH&params%5BtableName%5D=data_hourhis2&params%5BaqiTableName%5D=data_aqi_hour"
+  case_name: 统计单站的PM10 #用例名称

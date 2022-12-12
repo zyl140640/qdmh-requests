@@ -1,0 +1,48 @@
+- body:
+    "id": null,
+    "name": "脚本添加"
+    "lng": "40.3333"
+    "lat": "32.3333"
+    "areaId": 102,
+    "areaName": null
+    "address": "详细地址"
+    "leader": "负责人"
+    "tel": "15533065391"
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+    "remark": "备注"
+  severity: critical #用例等级
+  story: 站点管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/station"
+  case_name: 新增站点 #用例名称
+
+- body:
+    "searchValue": null
+    "createBy": "admin"
+    "createTime": "2022-12-08 08:18:54"
+    "updateBy": null
+    "updateTime": null
+    "remark": "备注"
+    "params": { }
+    "id": 49
+    "name": "脚本添加"
+    "lng": "40.3333"
+    "lat": "32.3333"
+    "areaId": 102
+    "areaName": "蓟州区"
+    "address": "详细地址"
+    "leader": "负责人"
+    "tel": "15533065391"
+    "mn": null
+    "onlineStatus": null
+    "heartTime": null
+  severity: critical #用例等级
+  story: 站点管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/station"
+  case_name: 修改站点信息 #用例名称

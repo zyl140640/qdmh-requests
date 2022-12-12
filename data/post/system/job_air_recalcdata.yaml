@@ -1,0 +1,17 @@
+- body:
+    "id": 39155
+    "stationId": 18
+    "mn": null
+    "qn": null
+    "monitorTime": "2022-12-07 00:00:00"
+    "pm10": 33
+    "pm25": 23
+    "pm10old": 33
+    "pm25old": 2
+  severity: critical #用例等级
+  story: 数据审核 #用例功能
+  feature: 数据审核 #用例模块
+  #接口请求地址
+  url: "job/air/recalcdata"
+
+  case_name: 修改站点监测数据 #用例名称

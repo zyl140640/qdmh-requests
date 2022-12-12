@@ -1,0 +1,49 @@
+- body:
+    "id": null
+    "model": "1"
+    "name": "1"
+    "manufacturer": null
+    "features": null
+    "tel": null
+    "delFlag": null
+    "productKey": null
+    "st": null
+    "status": "0"
+    "port": null
+    "tag": null
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+    "remark": null
+  severity: critical #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product"
+  case_name: 新增产品功能正常 #用例名称
+
+- body:
+    "id": null
+    "model": "1"
+    "name": "1"
+    "manufacturer": null
+    "features": null
+    "tel": null
+    "delFlag": null
+    "productKey": null
+    "st": null
+    "status": "0"
+    "port": null
+    "tag": null
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+    "remark": null
+  severity: critical #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product"
+  case_name: 修改产品功能正常 #用例名称

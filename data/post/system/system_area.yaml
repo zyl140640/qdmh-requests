@@ -1,0 +1,43 @@
+- body:
+    "areaId": null
+    "parentId": 102
+    "ancestors": null
+    "areaName": "测试区域"
+    "orderNum": "3"
+    "status": "0"
+    "lng": "001"
+    "lat": "002"
+    "zoom": null
+    "delFlag": null
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+  severity: critical #用例等级
+  story: 区域管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "system/area"
+  case_name: 新增区域信息 #用例名称
+
+- body:
+    "areaId": null
+    "parentId": 102
+    "ancestors": null
+    "areaName": "测试区域"
+    "orderNum": "3"
+    "status": "0"
+    "lng": "001"
+    "lat": "002"
+    "zoom": null
+    "delFlag": null
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+  severity: critical #用例等级
+  story: 区域管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "system/area"
+  case_name: 修改区域信息 #用例名称

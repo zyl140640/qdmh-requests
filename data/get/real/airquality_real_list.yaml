@@ -1,0 +1,28 @@
+- severity: normal #用例等级
+  story: 在线监控-数据查询 #用例功能
+  feature: 在线监控 #用例模块
+  #接口请求地址
+  url: "airquality/real/list?pageNum=1&pageSize=50"
+  case_name: 查询在线监控列表功能正常 #用例名称
+
+- severity: normal #用例等级
+  story: 在线监控-数据查询  #用例功能
+  feature: 在线监控 #用例模块
+  #接口请求地址
+  url: "airquality/real/list?pageNum=1&pageSize=50&onlineStatus=1"
+  case_name: 查询在线的所有站点信息 #用例名称
+
+- severity: minor #用例等级
+  story: 在线监控-数据查询 #用例功能
+  feature: 在线监控 #用例模块
+  #接口请求地址
+  url: "airquality/real/list?pageNum=1&pageSize=50&mn=TY010215400001"
+  case_name: 根据MN号查询站点数据 #用例名称
+
+
+- severity: trivial #用例等级
+  story: 在线监控-数据查询 #用例功能
+  feature: 在线监控 #用例模块
+  #接口请求地址
+  url: "/airquality/real/getRealdataByStationId/19"
+  case_name: 根据站点id进行查询 #用例名称

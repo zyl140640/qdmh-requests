@@ -1,0 +1,15 @@
+- severity: normal #用例等级
+  story: 站点管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/station/list?pageNum=1&pageSize=30"
+  case_name: 站点管理列表 #用例名称
+
+- severity: normal #用例等级
+  story: 站点管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/station/48"
+  case_name: 查看站点详细信息 #用例名称
+
+

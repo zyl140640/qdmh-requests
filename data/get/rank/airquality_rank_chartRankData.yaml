@@ -1,0 +1,28 @@
+- severity: normal #用例等级
+  story: 数据排名功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/rank/chartRankData?pageNum=1&pageSize=30&monitorTime=2022-12-05%2000%3A00%3A00&params%5BvalueName%5D=aqi&params%5BtableName%5D=data_aqi_day"
+  case_name: 查询AQI的日数据排名-曲线 #用例名称
+
+
+- severity: normal #用例等级
+  story: 数据排名功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/rank/chartRankData?pageNum=1&pageSize=30&monitorTime=2022-12-05%2000%3A00%3A00&params%5BvalueName%5D=pm10&params%5BtableName%5D=data_dayhis2"
+  case_name: 查询浓度的日数据排名-曲线 #用例名称
+
+- severity: normal #用例等级
+  story: 数据排名功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/rank/chartRankData?pageNum=1&pageSize=30&monitorTime=2022-11-28%2000%3A00%3A00&params%5BvalueName%5D=pm10&params%5BtableName%5D=data_weekhis2"
+  case_name: 查询浓度的周数据排名-曲线 #用例名称
+
+- severity: normal #用例等级
+  story: 数据排名功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/rank/chartRankData?pageNum=1&pageSize=30&monitorTime=2022-11-01%2000%3A00%3A00&params%5BvalueName%5D=pm10&params%5BtableName%5D=data_monthhis2"
+  case_name: 查询浓度的月数据排名-曲线 #用例名称

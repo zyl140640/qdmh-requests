@@ -1,0 +1,13 @@
+- severity: normal #用例等级
+  story: 区域管理 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "system/area/list?areaName=%E8%93%9F%E5%B7%9E%E5%8C%BA"
+  case_name: 区域管理查询 #用例名称
+
+- severity: normal #用例等级
+  story: 区域管理  #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "system/area/list"
+  case_name: 区域管理列表显示 #用例名称

@@ -1,0 +1,20 @@
+- severity: normal #用例等级
+  story: 多站单参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/hisChartMultiSsingleP?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&paramType=8&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2009%3A07%3A56&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour&params%5BparamType%5D=no2&params%5BparamTypeLabel%5D=NO2"
+  case_name: 多站单参-多站单参曲线数据查询 #用例名称
+
+- severity: normal #用例等级
+  story: 多站单参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/hisListMultiSsingleP?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationIds%5B1%5D=19&stationIds%5B2%5D=20&stationIds%5B3%5D=21&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&stationNames%5B1%5D=%E4%B8%8A%E4%BB%93%E9%95%87&stationNames%5B2%5D=%E4%B8%8B%E4%BB%93%E9%95%87&stationNames%5B3%5D=%E6%A1%91%E6%A2%93%E9%95%87&paramType=1&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2012%3A43%3A09&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour&params%5BparamType%5D=pm25&params%5BparamTypeLabel%5D=PM2.5"
+  case_name: 多站单参查询PM2.5-列表 #用例名称
+
+- severity: normal #用例等级
+  story: 多站单参功能  #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/hisChartMultiSsingleP?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationIds%5B1%5D=19&stationIds%5B2%5D=20&stationIds%5B3%5D=21&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&stationNames%5B1%5D=%E4%B8%8A%E4%BB%93%E9%95%87&stationNames%5B2%5D=%E4%B8%8B%E4%BB%93%E9%95%87&stationNames%5B3%5D=%E6%A1%91%E6%A2%93%E9%95%87&paramType=1&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2012%3A43%3A09&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour&params%5BparamType%5D=pm25&params%5BparamTypeLabel%5D=PM2.5"
+  case_name: 多站单参查询PM2.5-曲线 #用例名称

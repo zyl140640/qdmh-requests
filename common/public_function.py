@@ -1,6 +1,4 @@
-import json
 import os
-import random
 import yaml
 from common.request_util import RequestHandler
 from common.yaml_util import read_yaml_key, get_object_data_path
@@ -50,13 +48,15 @@ def request_header(token):
     return headers
 
 
-def yaml_case_data():
+def yaml_case_data(cases_path):
     """
     方法注解: 用于读取指定目录下的所有文件和子目录内的文件内容
+    :param cases_path: 测试用例路径
     :return: 返回List类型的测试数据
     """
     # 定义路径
-    path = os.getcwd() + read_yaml_key('config/config.yaml', 'case_data_path')
+    # path = os.getcwd() + read_yaml_key('config/config.yaml', 'case_data_path')
+    path = os.getcwd() + cases_path  # 遇到Get和Post一起的请求 所以需要修改此处方法进行灵活
     # 设置空列表
     file_list = []
     yaml_list = []

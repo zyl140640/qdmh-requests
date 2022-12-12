@@ -1,0 +1,55 @@
+- body:
+    "id": null
+    "deviceName": "测试设备"
+    "mn": "0133567"
+    "stationId": 52
+    "productId": 1
+    "senu": "033"
+    "iccid": "物联卡号"
+    "onlineStatus": null
+    "heartTime": null
+    "ip": null
+    "createBy": null
+    "createTime": null
+    "updateBy": null
+    "updateTime": null
+    "remark": null
+    "mcu": 1
+  severity: critical #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device"
+  case_name: 新增设备 #用例名称
+
+- body:
+    "searchValue": null
+    "createBy": "admin"
+    "createTime": "2022-12-09 08:51:07"
+    "updateBy": null
+    "updateTime": null
+    "remark": null
+    "params": { }
+    "id": 33
+    "deviceName": "测试设备"
+    "mn": "0133567"
+    "stationId": 52
+    "productId": 1
+    "stationName": "脚本添加"
+    "model": "M2031"
+    "productName": "粉尘扬尘在线监测仪"
+    "senu": "033"
+    "iccid": "物联卡号"
+    "onlineStatus": "0"
+    "heartTime": null
+    "softwareMainVer": null
+    "softwareSignalVer": null
+    "areaId": null
+    "standPm25": 35
+    "standPm10": 70
+  severity: critical #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device"
+  case_name: 修改设备信息 #用例名称

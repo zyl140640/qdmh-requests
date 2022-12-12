@@ -1,0 +1,28 @@
+- severity: normal #用例等级
+  story: AQI查询功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/aqihis/list?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2012%3A00%3A00&params%5BtableName%5D=data_aqi_hour&params%5BdataType%5D=datetimerange"
+  case_name: 根据监测时间-时报条件查询AQI-图表 #用例名称
+
+- severity: normal #用例等级
+  story: AQI查询功能  #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/aqihis/listAqihisChart?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&params%5BbeginMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BtableName%5D=data_aqi_day&params%5BdataType%5D=daterange"
+  case_name: 根据监测时间-时报条件查询AQI-列表 #用例名称
+
+- severity: normal #用例等级
+  story: AQI查询功能  #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/aqihis/list?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&params%5BbeginMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BtableName%5D=data_aqi_day&params%5BdataType%5D=daterange"
+  case_name: 根据监测时间+日报条件查询AQI-图表 #用例名称
+
+
+- severity: normal #用例等级
+  story: AQI查询功能  #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "http://jxair.minhopeonline.com/prod-api/airquality/aqihis/list?pageNum=1&pageSize=30&stationIds%5B0%5D=18&stationNames%5B0%5D=%E4%B8%8B%E8%90%A5%E9%95%87&params%5BbeginMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-05%2000%3A00%3A00&params%5BtableName%5D=data_aqi_day&params%5BdataType%5D=daterange"
+  case_name: 根据监测时间+日报条件查询AQI-列表 #用例名称

@@ -1,0 +1,43 @@
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour"
+  case_name: 单站单参-小时查询 #用例名称
+
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour"
+  case_name: 单站多参-小时查询 #用例名称
+
+
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_day"
+  case_name: 单站单参-日查询 #用例名称
+
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_day"
+  case_name: 单站多参-日查询 #用例名称
+
+
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_week"
+  case_name: 单站单参-周查询 #用例名称
+
+- severity: normal #用例等级
+  story: 单站多参功能 #用例功能
+  feature: 数据查看 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisChartSingleS?pageNum=1&pageSize=30&stationId=18&params%5BbeginMonitorTime%5D=2022-12-06%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-06%2015%3A08%3A53&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_week"
+  case_name: 单站多参-周查询 #用例名称

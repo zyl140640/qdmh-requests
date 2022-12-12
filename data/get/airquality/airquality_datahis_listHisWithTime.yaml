@@ -1,0 +1,13 @@
+- severity: normal #用例等级
+  story: 数据审核 #用例功能
+  feature: 数据审核 #用例模块
+  #接口请求地址
+  url: "airquality/datahis/listHisWithTime?pageNum=1&pageSize=30&stationId=18&monitorTime=2022-12-07%2013%3A38%3A24&params%5BbeginMonitorTime%5D=2022-12-07%2000%3A00%3A00&params%5BendMonitorTime%5D=2022-12-07%2023%3A00%3A00&params%5BtableName%5D=data_hourhis2&params%5BtimeTableName%5D=data_time_hour"
+  case_name: 查询站点数据列表 #用例名称
+
+- severity: normal #用例等级
+  story: 数据审核 #用例功能
+  feature: 数据审核 #用例模块
+  #接口请求地址
+  url: "airquality/log/list?pageNum=1&pageSize=10&stationId=18"
+  case_name: 根据操作时间查询修改审核记录 #用例名称

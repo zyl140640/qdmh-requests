@@ -1,0 +1,29 @@
+- severity: normal #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product/list?pageNum=1&pageSize=30"
+  case_name: 产品列表显示正常 #用例名称
+
+- severity: normal #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product/list?pageNum=1&pageSize=30&model=M2031"
+  case_name: 根据产品型号查询产品信息 #用例名称
+
+- severity: normal #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product/1"
+  case_name: 查看产品详情功能正常 #用例名称
+
+
+- severity: normal #用例等级
+  story: 产品信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/product/list?pageNum=1&pageSize=30&name=%E7%B2%89%E5%B0%98%E6%89%AC%E5%B0%98%E5%9C%A8%E7%BA%BF%E7%9B%91%E6%B5%8B%E4%BB%AA"
+  case_name: 根据产品名称查询产品信息 #用例名称
+

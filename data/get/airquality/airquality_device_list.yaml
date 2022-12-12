@@ -1,0 +1,35 @@
+- severity: normal #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device/list?pageNum=1&pageSize=30"
+  case_name: 设备信息列表 #用例名称
+
+- severity: normal #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device/list?pageNum=1&pageSize=30&mn=TY01021540001A"
+  case_name: 根据MN号查询设备信息 #用例名称
+
+- severity: normal #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device/list?pageNum=1&pageSize=30&onlineStatus=1&areaId=100"
+  case_name: 根据设备状态查询设备信息 #用例名称
+
+
+- severity: normal #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device/list?pageNum=1&pageSize=30&stationId=18&areaId=100"
+  case_name: 根据站点名称查询设备信息 #用例名称
+
+- severity: normal #用例等级
+  story: 设备信息 #用例功能
+  feature: 基础信息 #用例模块
+  #接口请求地址
+  url: "airquality/device/list?pageNum=1&pageSize=30&senu=033"
+  case_name: 根据设备编号查询设备信息 #用例名称
